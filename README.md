@@ -5,7 +5,7 @@ Author : Augustin De Champs, Date : 30/10/2016
 
 Compile with python 2.7 if possible or python 2.x.
 Python modules required : matplotlib, numpy
-Execute python2.7 main.py to compile and launch.
+Execute command "python2.7 main.py" to compile and launch the program.
 
 For data importation, a CSV file is required :
 The CSV file fields must be the following :
