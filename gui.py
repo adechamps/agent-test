@@ -8,7 +8,7 @@ import subprocess
 from matplotlib.figure import Figure
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import numpy as np
-
+import sys
 from agent import *
 from importer import *
 from simulate import *
@@ -365,4 +365,7 @@ class GUIApp:
 
     def newWindow(self):
         """Opens a new window independent from the current window."""
-        subprocess.Popen(["/usr/bin/python2.7","main.py"])
+        subprocess.Popen([sys.executable,"main.py"])
+        
+
+     
