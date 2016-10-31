@@ -97,7 +97,7 @@ class GUIApp:
 
     def drawBarChartBreed(self):
         """Draw the bar chart showing the number of agents in each breed"""
-        self.figBarChartBreed = Figure(figsize=(3, 3), dpi=100)
+        self.figBarChartBreed = Figure(figsize=(3, 2), dpi=100)
         self.axBarChartBreed = self.figBarChartBreed.add_subplot(111)
         width=0.4
         self.axBarChartBreed.bar([0.5,1.5], [self.count["nbBreed_C"], self.count["nbBreed_NC"]], bottom=0, width=width)
@@ -120,7 +120,7 @@ class GUIApp:
 
     def drawBarChartStatus(self):
         """Draw the bar chart showing the number of agents with each status"""
-        self.figBarChartStatus = Figure(figsize=(6, 3), dpi=100)
+        self.figBarChartStatus = Figure(figsize=(6, 2), dpi=100)
         self.axBarChartStatus = self.figBarChartStatus.add_subplot(111)
         width=0.4
         self.axBarChartStatus.bar([0.5,1.5, 2.5, 3.5], [self.count["nbLost"], self.count["nbGained"], self.count["nbRegained"], self.count["nbUnchanged"]], bottom=0, width=width)
@@ -144,7 +144,7 @@ class GUIApp:
     def drawLineChartBreed(self):
         """Draw the line chart showing the number of agents in each breed during the 10 last years simulated"""
         x , y1, y2 = self.getLineChartBreedValues()
-        self.figLineChartBreed = Figure(figsize=(12, 3), dpi=112)
+        self.figLineChartBreed = Figure(figsize=(12, 2), dpi=112)
         self.ax1LineChartBreed = self.figLineChartBreed.add_subplot(121)
         self.ax2LineChartBreed = self.figLineChartBreed.add_subplot(122)
         self.ax1LineChartBreed.set_xlabel('Year')
