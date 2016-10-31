@@ -13,3 +13,5 @@ Agent_Breed;Policy_ID;Age;Social_Grade;Payment_at_Purchase;Attribute_Brand;Attri
 Float numbers must follow the X.XXX format (Y,YYY will raise an error).
 The CSV dialect will be automatically deduced from the CSV file.
 See data-example.csv as an example of correct importation file. 
+
+A standalone program is available : unzip dist-windows.zip and execute main.exe
